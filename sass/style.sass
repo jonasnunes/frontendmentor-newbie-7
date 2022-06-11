@@ -6,3 +6,90 @@
     padding: 0
     box-sizing: border-box
     text-decoration: none
+
+body
+    background-color: variables.$dark-cyan
+    overflow: hidden
+    font-family: variables.$font
+    max-width: 1440px
+
+h3
+    color: variables.$very-dark-blue
+
+.circle, .circle2
+    width: 500px
+    height: 500px
+    border-radius: 50%
+    background-color: hsl(185, 98%, 39%)
+    position: absolute
+
+.circle
+    top: -20%
+    left: -50%
+    box-shadow: 15px 20px 40px #00000052
+
+    @include mixins.responsivo 
+        top: -20%
+        left: -30%
+
+.circle2
+    bottom: -20%
+    right: -50%
+    box-shadow: 15px 20px 40px 20px #00000052
+
+    @include mixins.responsivo 
+        bottom: -20%
+        right: -30%
+
+.container
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    width: 350px
+    background-color: #fff
+    border-radius: 1rem
+
+    header
+        position: relative
+
+        #img-profile
+            position: absolute
+            border-radius: 50%
+            top: 60%
+            left: 35%
+
+    header img 
+        border-radius: 1rem 1rem 0 0
+    
+    .section1
+        border-bottom: 1px solid variables.$dark-greyish-blue
+        padding-block: 4.5rem 1.5rem
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        gap: .5rem
+
+        span
+            color: variables.$dark-greyish-blue
+            font-weight: 400
+        
+        p
+            font-size: .92rem
+            color: variables.$dark-greyish-blue
+    
+    .section2
+        display: flex
+        justify-content: space-around
+        padding: 1.5rem 2rem
+        
+        .stats
+            display: flex
+            flex-direction: column
+            align-items: center
+            gap: .5rem
+
+            p
+                font-size: .8rem
+                color: variables.$dark-greyish-blue
