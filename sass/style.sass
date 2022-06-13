@@ -1,5 +1,4 @@
 @use 'variables'
-@use 'mixins'
 
 *
     margin: 0
@@ -9,37 +8,12 @@
 
 body
     background-color: variables.$dark-cyan
-    overflow: hidden
+    background-repeat: no-repeat
     font-family: variables.$font
-    max-width: 1440px
 
 h3
     color: variables.$very-dark-blue
-
-.circle, .circle2
-    width: 500px
-    height: 500px
-    border-radius: 50%
-    background-color: hsl(185, 98%, 39%)
-    position: absolute
-
-.circle
-    top: -20%
-    left: -50%
-    box-shadow: 15px 20px 40px #00000052
-
-    @include mixins.responsivo 
-        top: -20%
-        left: -30%
-
-.circle2
-    bottom: -20%
-    right: -50%
-    box-shadow: 15px 20px 40px 20px #00000052
-
-    @include mixins.responsivo 
-        bottom: -20%
-        right: -30%
+    font-weight: 700
 
 .container
     position: absolute
@@ -49,6 +23,7 @@ h3
     width: 350px
     background-color: #fff
     border-radius: 1rem
+    box-shadow: 2px 4px 8px #00000060
 
     header
         position: relative

@@ -7,45 +7,13 @@
 
 body {
   background-color: hsl(185deg, 75%, 39%);
-  overflow: hidden;
+  background-repeat: no-repeat;
   font-family: "Kumbh Sans", sans-serif;
-  max-width: 1440px;
 }
 
 h3 {
   color: hsl(229deg, 23%, 23%);
-}
-
-.circle, .circle2 {
-  width: 500px;
-  height: 500px;
-  border-radius: 50%;
-  background-color: hsl(185deg, 98%, 39%);
-  position: absolute;
-}
-
-.circle {
-  top: -20%;
-  left: -50%;
-  box-shadow: 15px 20px 40px rgba(0, 0, 0, 0.3215686275);
-}
-@media (min-width: 700px) {
-  .circle {
-    top: -20%;
-    left: -30%;
-  }
-}
-
-.circle2 {
-  bottom: -20%;
-  right: -50%;
-  box-shadow: 15px 20px 40px 20px rgba(0, 0, 0, 0.3215686275);
-}
-@media (min-width: 700px) {
-  .circle2 {
-    bottom: -20%;
-    right: -30%;
-  }
+  font-weight: 700;
 }
 
 .container {
@@ -56,6 +24,7 @@ h3 {
   width: 350px;
   background-color: #fff;
   border-radius: 1rem;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3764705882);
 }
 .container header {
   position: relative;
